@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccioJobs Blog</title>
+    <style>
+        /* Simple CSS for a marquee effect */
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .marquee h1 {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(100%, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+    </style>
 </head>
 <body>
-   <h1><marquee>Welcome to Accio Jobs!</marquee></h1> <!-- Ensure this is correctly placed -->
+   <div class="marquee"><h1>Welcome to Accio Jobs!</h1></div>
 
     <h2><a href="https://acciojob.com/blog">Blog</a></h2>
 
